@@ -2,11 +2,13 @@
     padding: 0;
     margin: 0;
     border-width: 0;
+}
+
+a {
     text-decoration: none;
 }
 
 body {
-    overflow: hidden;
     background-color: rgb(32,103,178);
 }
 
@@ -14,11 +16,14 @@ body {
     display: flex;
     flex-direction: row;
     margin-left: 2em;
+    justify-content: start;
+    align-items: center;
 }
 
 .container-conteudo {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-left: 6em;
 }
 
@@ -34,6 +39,7 @@ p {
     font-weight: 50;
     padding-top: 0.3em;
     padding-bottom: 0.3em;
+    padding-left: 0.5em;
 }
 
 .p1 {
@@ -50,6 +56,7 @@ p {
 
 .button-custom {
     display: flex;
+    flex-basis: 50%;
     margin-top: 1em;
     margin-bottom: 1em;
     opacity: 1;
@@ -65,19 +72,10 @@ p {
     align-items: center;
     background-color: rgb(77,167,221);
     width: 5em;
+    min-width: 5em;
     height: 5em;
 }
 
-.icon-custom-voltar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 1em;
-    padding-right: 1em;
-    width: 3em;
-    height: 3em;
-}
 
-.text-custom {
-    justify-content: start;
-}
+
+
